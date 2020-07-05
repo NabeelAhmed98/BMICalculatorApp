@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.nabee.bmicalculatorapp.MainActivity">
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:columnCount="3"
+        android:padding="40dp"
+        android:rowCount="10">
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_columnSpan="3">
+
+            <TextView
+                android:id="@+id/unitChoice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:text="@string/unit_choice" />
+            <RadioGroup
+                android:id="@+id/radioUnit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/englishUnits"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="8dp"
+                    android:text="@string/english_units"
+                    android:checked="true"/>
+
+                <RadioButton
+                    android:id="@+id/metricUnits"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="8dp"
+                    android:text="@string/metric_units"/>
+            </RadioGroup>
+
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <TextView
+            android:id="@+id/height"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="1"
+            android:paddingBottom="8dp"
+            android:text="@string/height" />
+
+        <EditText
+            android:id="@+id/userHeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="1"
+            android:ems="8"
+            android:inputType="number"
+            android:paddingBottom="8dp" />
+
+
+        <TextView
+            android:id="@+id/heightUnit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_row="1"
+            android:paddingBottom="8dp"
+            android:text="@string/inches" />
+
+        <TextView
+            android:id="@+id/weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="2"
+            android:paddingBottom="8dp"
+            android:text="@string/weight" />
+
+        <EditText
+            android:id="@+id/userWeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="2"
+            android:ems="8"
+            android:inputType="number"
+            android:paddingBottom="8dp"
+            tools:layout_editor_absoluteX="650dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <TextView
+            android:id="@+id/weightUnit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_row="2"
+            android:paddingBottom="8dp"
+            android:text="@string/pounds" />
+
+        <TextView
+            android:id="@+id/bmi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="3"
+            android:paddingBottom="8dp"
+            android:text="@string/bmi" />
+
+        <TextView
+            android:id="@+id/bmiCalculation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_columnSpan="2"
+            android:layout_row="3"
+            android:paddingBottom="8dp"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/bmiValues"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_columnSpan="3"
+            android:layout_gravity="center"
+            android:layout_row="4"
+            android:paddingBottom="8dp"
+            android:text="@string/bmi_values" />
+
+        <TextView
+            android:id="@+id/underweight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="5"
+            android:paddingBottom="8dp"
+            android:text="@string/underweight" />
+
+        <TextView
+            android:id="@+id/underweightValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_columnSpan="2"
+            android:layout_row="5"
+            android:paddingBottom="8dp"
+            android:text="@string/underweight_value" />
+
+        <TextView
+            android:id="@+id/normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="6"
+            android:paddingBottom="8dp"
+            android:text="@string/normal" />
+
+        <TextView
+            android:id="@+id/normalValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_columnSpan="2"
+            android:layout_row="6"
+            android:paddingBottom="8dp"
+            android:text="@string/normal_value" />
+
+        <TextView
+            android:id="@+id/overweight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="7"
+            android:paddingBottom="8dp"
+            android:text="@string/overweight" />
+
+        <TextView
+            android:id="@+id/overweightValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_columnSpan="2"
+            android:layout_row="7"
+            android:paddingBottom="8dp"
+            android:text="@string/overweight_value" />
+
+        <TextView
+            android:id="@+id/obese"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="8"
+            android:paddingBottom="8dp"
+            android:text="@string/obese" />
+
+        <TextView
+            android:id="@+id/obeseValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_columnSpan="2"
+            android:layout_row="8"
+            android:paddingBottom="8dp"
+            android:text="@string/obese_value" />
+
+        <Button
+            android:id="@+id/calculate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="9"
+            android:paddingBottom="8dp"
+            android:text="@string/calculate" />
+
+    </GridLayout>
+
+</android.support.constraint.ConstraintLayout>

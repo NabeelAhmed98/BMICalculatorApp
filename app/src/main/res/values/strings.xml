@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">BMI Calculator App</string>
+    <string name="unit_choice">Unit Choice:</string>
+    <string name="english_units">English</string>
+    <string name="metric_units">Metric</string>
+    <string name="height">Height</string>
+    <string name="weight">Weight</string>
+    <string name="bmi">BMI</string>
+    <string name="meters">m</string>
+    <string name="inches">in</string>
+    <string name="pounds">lb</string>
+    <string name="kilograms">kg</string>
+    <string name="bmi_values">BMI VALUES</string>
+    <string name="underweight">Underweight:</string>
+    <string name="normal">Normal:</string>
+    <string name="overweight">Overweight:</string>
+    <string name="obese">Obese:</string>
+    <string name="underweight_value">less than 18.5</string>
+    <string name="normal_value">between 18.5 and 24.9</string>
+    <string name="overweight_value">between 25 and 29.9</string>
+    <string name="obese_value">30 or greater</string>
+    <string name="calculate">calculate</string>
+</resources>
